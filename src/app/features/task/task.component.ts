@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from './task';
-
+import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'app-task',
-  imports: [],
+  imports: [MatCardModule],
   templateUrl: './task.component.html',
   styleUrl: './task.component.css'
 })
