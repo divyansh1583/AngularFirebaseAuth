@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import './custom-theme.scss';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--mat-background-color);
+  color: var(--mat-body-color);
+}
+
+/* Theme utility classes */
+.primary-color {
+  color: var(--mat-primary-color);
+}
+
+.primary-bg {
+  background-color: var(--mat-primary-container);
+}
+
+.tertiary-color {
+  color: var(--mat-tertiary-color);
+}
+
+.tertiary-bg {
+  background-color: var(--mat-tertiary-container);
+}
